@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import LandingPage from './landingPage'; 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import ChatPage from './pages/ChatPage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,8 @@ root.render(
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/chat" element={<App />} />
+        <Route path="/chat_page" element={<ChatPage />} />
+
         {/* Add more routes here */}
       </Routes>
     </Router>
